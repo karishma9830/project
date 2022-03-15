@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Car Rentals</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Car</h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="cars.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop </h2>
+            <h3>Yourself From Exploring.! </h3>
+            <p>The main objective is to provide a temporary vehicle, 
+                for those who do not own their own car,
+               or owners of damaged or destroyed vehicles who are waiting 
+               repair or insurance compensation or travelers who are out of town
+            </p>
+            <a href="#">Cars</a>
+
+        </div>
+
+        <ul class="Social">
+            <li><a href="#"><img src="facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="insta.jpg" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Models</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click',() => { 
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
